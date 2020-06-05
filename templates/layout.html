@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >SnapApp</title>               
+        <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></strong>
+    </head>
+    <body>
+
+        <header>
+            <div class="container">
+                <ul class = "nav-bar">
+                    <li><a href = "/">SnappApp</a></li>
+                    <li><a href="/how-to">How to</a></li>
+                    <li><a href="/upload">Upload</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+    </body>
+</html>
